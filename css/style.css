@@ -101,7 +101,10 @@ a:focus {
 	outline: none;
 	color: #ffffff;
 }
-
+.nice-select{
+	width: calc(100% - 20px);
+	margin-bottom: 10px;
+}
 ul,
 ol {
 	padding: 0;
@@ -136,7 +139,6 @@ ol {
 .set-bg {
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center bottom;
 }
 
 .spad {
@@ -543,7 +545,7 @@ ol {
 -----------------------*/
 
 .hero {
-	padding: 170px 0;
+	padding: 240px 0;
 }
 
 .hero__text {

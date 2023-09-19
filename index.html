@@ -130,8 +130,8 @@
                         <form id="simulacao-form">
                             <div class="input-list">
                                 <div id="select1" class="input-list-item">
-                                    <p>Tipo de Empréstimo:</p>
-                                    <select  id="tipoEmprestimo">
+                                    <label for="tipoEmprestimo">Tipo de Empréstimo:</label>
+                                    <select id="tipoEmprestimo" onchange="mostrarOcultarEntrada()">
                                         <option value="Crédito pessoal">Crédito pessoal</option>
                                         <option value="Empréstimo na conta de energia">Empréstimo na conta de energia</option>
                                         <option value="Empréstimo no boleto">Empréstimo no boleto</option>
@@ -142,25 +142,25 @@
                                     </select>
                                 </div>
                                 <div class="input-list-item">
-                                    <p>Valor em dinheiro (R$):</p>
+                                    <label for="valor">Valor em dinheiro (R$):</label>
                                     <input type="text" id="valor">
                                 </div>
                                 <div class="input-list-item">
-                                    <p>Quanto tempo (mês):</p>
+                                    <label for="tempo">Quanto tempo (mês):</label>
                                     <input type="text" id="tempo">
                                 </div>
                             </div>
-                            <div class="input-full-width">
-                                <p>Quanto de entrada:</p>
+                            <div class="input-full-width" id="entradaContainer" style="display: none;">
+                                <label for="entrada">Quanto de entrada:</label>
                                 <input type="text" id="entrada">
                             </div>
                             <div class="input-list last">
                                 <div class="input-list-item">
-                                    <p>Nome:</p>
+                                    <label for="nome">Nome:</label>
                                     <input type="text" id="nome">
                                 </div>
                                 <div class="input-list-item">
-                                    <p>Sobrenome</p>
+                                    <label for="sobrenome">Sobrenome:</label>
                                     <input type="text" id="sobrenome">
                                 </div>
                             </div>
