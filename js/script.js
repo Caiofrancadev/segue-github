@@ -37,9 +37,24 @@ function enviarMensagemWhatsApp() {
     }
 
     // Abre uma nova janela com o link para o WhatsApp do consultor
-    var link = "https://api.whatsapp.com/send?phone=NUMERO_DO_CONSULTOR_AQUI&text=" + encodeURIComponent(mensagem);
+    var link = "https://api.whatsapp.com/send?phone=5519992701313&text=" + encodeURIComponent(mensagem);
     window.open(link, "_blank");
 }
 
 // Evento para chamar a função de mostrar/ocultar entrada inicialmente
 mostrarOcultarEntrada();
+function enviarMensagemWhatsApp2() {
+    var nomeC = document.getElementById("nomeC").value;
+    var emailC = document.getElementById("emailC").value;
+    var mensagemC = document.getElementById("mensagemC").value;
+
+    // Monta a mensagem para o WhatsApp
+    var mensagemWhatsApp = "Olá, me chamo " + nomeC+ ". Este é o meu email de contato: " + emailC + "\n\n" + mensagemC;
+
+    // Formata a mensagem para a URL do WhatsApp
+    var mensagemWhatsAppEncoded = encodeURIComponent(mensagemWhatsApp);
+
+    // Abre uma nova janela com o link para o WhatsApp
+    var linkWhatsApp = "https://api.whatsapp.com/send?phone=5519992701313&text=" + mensagemWhatsAppEncoded;
+    window.open(linkWhatsApp, "_blank");
+}
